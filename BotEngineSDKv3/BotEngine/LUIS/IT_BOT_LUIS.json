@@ -1,0 +1,256 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "IT_BOT_LUIS",
+  "desc": "IT BOT LUIS",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "ChangePasswordIntent"
+    },
+    {
+      "name": "GreetingIntent"
+    },
+    {
+      "name": "HelpIntent"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "SignIn"
+    },
+    {
+      "name": "SignOut"
+    },
+    {
+      "name": "ToKnowContact"
+    },
+    {
+      "name": "UnlockAccountIntent"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "personName",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "can you help me ?",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "can you help me here",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "can you log off",
+      "intent": "SignOut",
+      "entities": []
+    },
+    {
+      "text": "change password",
+      "intent": "ChangePasswordIntent",
+      "entities": []
+    },
+    {
+      "text": "contact for personname",
+      "intent": "ToKnowContact",
+      "entities": []
+    },
+    {
+      "text": "contact information for personname",
+      "intent": "ToKnowContact",
+      "entities": []
+    },
+    {
+      "text": "exit",
+      "intent": "SignOut",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "GreetingIntent",
+      "entities": []
+    },
+    {
+      "text": "hello what can you do",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "help me please",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "help me to start",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "help me to understand more please",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "help me with this",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "help please",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "GreetingIntent",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "GreetingIntent",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "i need your help",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "information for personname",
+      "intent": "ToKnowContact",
+      "entities": []
+    },
+    {
+      "text": "log in",
+      "intent": "SignIn",
+      "entities": []
+    },
+    {
+      "text": "log off",
+      "intent": "SignOut",
+      "entities": []
+    },
+    {
+      "text": "log out",
+      "intent": "SignOut",
+      "entities": []
+    },
+    {
+      "text": "login",
+      "intent": "SignIn",
+      "entities": []
+    },
+    {
+      "text": "login please",
+      "intent": "SignIn",
+      "entities": []
+    },
+    {
+      "text": "logout",
+      "intent": "SignOut",
+      "entities": []
+    },
+    {
+      "text": "password change",
+      "intent": "ChangePasswordIntent",
+      "entities": []
+    },
+    {
+      "text": "please change password",
+      "intent": "ChangePasswordIntent",
+      "entities": []
+    },
+    {
+      "text": "please help",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "please help me",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "please login",
+      "intent": "SignIn",
+      "entities": []
+    },
+    {
+      "text": "show me more help topics",
+      "intent": "HelpIntent",
+      "entities": []
+    },
+    {
+      "text": "sign in",
+      "intent": "SignIn",
+      "entities": []
+    },
+    {
+      "text": "sign out",
+      "intent": "SignOut",
+      "entities": []
+    },
+    {
+      "text": "signin",
+      "intent": "SignIn",
+      "entities": []
+    },
+    {
+      "text": "signout",
+      "intent": "SignOut",
+      "entities": []
+    },
+    {
+      "text": "unlock account",
+      "intent": "UnlockAccountIntent",
+      "entities": []
+    },
+    {
+      "text": "unlock my account",
+      "intent": "UnlockAccountIntent",
+      "entities": []
+    },
+    {
+      "text": "what is rebranding",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "whats up",
+      "intent": "GreetingIntent",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

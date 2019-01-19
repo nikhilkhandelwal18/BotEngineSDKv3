@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotEngine", "BotEngine\BotEngine.csproj", "{86C9B9D9-0713-4C20-9F09-4411DFD5358E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotWebChat", "BotWebChat\BotWebChat.csproj", "{15F71E16-AA4C-406E-B4BB-F69CCB7F649D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86C9B9D9-0713-4C20-9F09-4411DFD5358E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C9B9D9-0713-4C20-9F09-4411DFD5358E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C9B9D9-0713-4C20-9F09-4411DFD5358E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C9B9D9-0713-4C20-9F09-4411DFD5358E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F71E16-AA4C-406E-B4BB-F69CCB7F649D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F71E16-AA4C-406E-B4BB-F69CCB7F649D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F71E16-AA4C-406E-B4BB-F69CCB7F649D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F71E16-AA4C-406E-B4BB-F69CCB7F649D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F8E259C-2045-4156-91F4-F215EC1577F4}
+	EndGlobalSection
+EndGlobal

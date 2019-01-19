@@ -1,0 +1,156 @@
+﻿@model BotWebChat.Models.ChatConfig
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+  <style>
+    /*html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+
+
+        body {
+            margin: 0
+        }*/
+
+    /*#BotChatElement,
+        #BotChatElement > * {
+            height: 100%;
+            width: 100%;
+        }*/
+
+    .css-sj2gce {
+      background-color: red;
+    }
+
+    .css-1vieo9r .ac-pushButton, [data-css-1vieo9r] .ac-pushButton {
+      padding: 36px !important;
+    }
+
+    .css-17vq3lb svg {
+      fill: #e9741c !important;
+    }
+
+    .css-dfjva8.from-user {
+      background-color: #e9741c !important;
+    }
+    /*.css-mfy564 {
+                background-image: url('https://www.allwayshealthpartners.org/images/allways-logo.svg');
+                z-index: 0;
+                background-repeat:no-repeat;
+                background-position:center;
+            }*/
+    .css-dfjva8 {
+      background-color: rgba(0,1,1,0.25) !important;
+      border: 1px solid #e4f3f7;
+    }
+
+    .wc-header-new {
+      background-color: #0078d7;
+      box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+      box-sizing: content-box;
+      color: #ffffff;
+      font-weight: 500;
+      height: 30px;
+      left: 0;
+      letter-spacing: 0.5px;
+      padding: 8px 8px 0 8px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      text-align: left;
+      background: #fff;
+      border: none;
+      padding: 15px 20px;
+      position: fixed;
+      height: 45px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
+    }
+
+    .wc-header {
+      display: none !important;
+    }
+
+    .wc-header-new img {
+      width: 135px;
+    }
+
+    /*.wc-message-groups {
+            background-color: rgba(0,1,1,0.25) !important;
+            border: 1px solid #e4f3f7;
+        }*/
+
+    .wc-message-groups {
+      background-color: #e4f3f7 !important;
+      border: 1px solid #e4f3f7;
+    }
+
+    .wc-console {
+      border: 3px solid #e9741c !important;
+    }
+
+      .wc-console .wc-send svg {
+        fill: #e9741c !important;
+      }
+
+    .css-1lmr15n {
+      border-top: 3px solid #e9741c;
+      -webkit-box-shadow: -1px -5px 19px -6px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px -5px 19px -6px rgba(0,0,0,0.75);
+      box-shadow: -1px -5px 19px -6px rgba(0,0,0,0.75);
+    }
+
+    .css-1yaojre {
+      margin: 0px;
+    }
+
+    .css-gtdio3 {
+      background: #e4f3f7;
+    }
+
+
+
+    .css-sj2gce.avatar {
+      background: #fff;
+    }
+
+    .wc-message-from-bot .wc-message-content {
+      background-color: #abb6b9 !important;
+      color: #000000;
+      border: 1px solid;
+      border-color: #666 transparent transparent
+    }
+  </style>
+</head>
+<link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+<div id="bot" />
+<script src="https://cdn.botframework.com/botframework-webchat/0.13.1-master.248c723/botchat-es5.js"></script>
+<script>
+  var botConnection = new BotChat.DirectLine({
+    token: '@Model.Token',
+    user: { id: '@Model.UserId' }
+  });
+  BotChat.App({
+    botConnection: botConnection,
+    user: { id: '@Model.UserId' },
+  bot: { id: 'botid' },
+  resize: 'detect'
+  }, document.getElementById("bot"));
+
+  botConnection
+    .postActivity({
+      from: { id: '@Model.UserId' },
+      name: 'ConversationUpdate',
+      type: 'event',
+      value: ''
+    })
+    .subscribe(function (id) {
+      console.log('"Greetings request event" sent');
+    });
+</script>

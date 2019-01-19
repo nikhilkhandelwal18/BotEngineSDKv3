@@ -125,6 +125,9 @@ namespace BotEngine.Dialogs.ExceptionHandler
       var exceptionStr = $"**{message}**  \n\n{stackTrace}";
 
       await context.PostAsync(exceptionStr).ConfigureAwait(false);
+
+      //stops next call
+      context.Done(true);
     }
   }
 }

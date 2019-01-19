@@ -191,10 +191,8 @@
     <Compile Include="Dialogs\SelfHelpBot\QnADialog.cs" />
     <Compile Include="Dialogs\SelfHelpBot\RootDialog.cs" />
     <Compile Include="Dialogs\SelfHelpBot\SignInDialog.cs" />
-    <Compile Include="Dialogs\SelfHelpBot\StartDialog.cs" />
     <Compile Include="Dialogs\AskMemberIdDialog.cs" />
     <Compile Include="Dialogs\ConversationStarter.cs" />
-    <Compile Include="Dialogs\EmptyDialog.cs" />
     <Compile Include="Dialogs\ExceptionHandler\ExceptionHandlerDialog.cs" />
     <Compile Include="Dialogs\GreetingDialog.cs" />
     <Compile Include="Dialogs\ITBotRootDialog.cs" />
